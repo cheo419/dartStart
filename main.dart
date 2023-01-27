@@ -1,5 +1,9 @@
 void main() {
-  String name = 'lee';
-  // == var name = 'lee';
-  name = 'call';
+  dynamic name;
+  if (name is String) {
+    name.
+  }
+  if (name is int){
+    name.
+  }
 }
