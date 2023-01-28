@@ -23,3 +23,10 @@ const = dart의 const는 자바스크립트나 타입스크립트와 다름
 자바스크립트나 타입스크립트의 const는 다트의 final과 비슷
 dart 의 const는 compile-time constant를 만들어주고 이뜻은 컴파일할때 알고있는 값에 사용해야한단 뜻
 만약 어떤 값인지 모르고 그 값이 API로부터 오거나 사용자가 화면에서 입력해야 하는 값이라면 그건 const가 아닌 final이나 var가 되어야 한다.
+
+#1복습
+final: 값을 재할당하지 못하는 변수를 만듦
+dynamic type: 어떤 타입의 데이터가 들어올 지 모를 때 사용함
+const: 컴파일 할 때 값을 알고 있는 변수
+final: 런타임 중에 만들어질 수 있는 변수
+late: final, var, String같은 것들 앞에 써줄 수 있는 수식어로서 어떤 데이터가 올 지 모를 때 사용한다.
