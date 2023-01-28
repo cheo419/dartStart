@@ -1,8 +1,23 @@
 void main() {
-  String name = "lee";
-  bool bol = true;
-  int age = 10;
-  double money = 52.55;
-  num x = 12;
-  num y = 1.2;
+  // var numbers = [
+  //   1,
+  //   2,
+  //   3,
+  //   4,
+  // ];
+  // List<int> numbers2 = [1, 2, 3, 4];
+  // == same
+
+  var givemeFour = true;
+  var numbers = [
+    1,
+    2,
+    3,
+    if (givemeFour) 4,
+  ];
+
+  if (givemeFour) {
+    numbers.add(4);
+  }
+  // == same
 }

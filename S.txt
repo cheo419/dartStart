@@ -35,3 +35,11 @@ late: final, var, String같은 것들 앞에 써줄 수 있는 수식어로서 �
 데이터타입 (우클릭 후 type definition을 누르면 자세한 설명이 나옴)
 대부분 타입들은 객체(object)로 이루어져있다(함수도 객체)
 이것이 Dart가 객체 지향 언어로 불리는 이유
+
+List = 
+numbers.add(1); 이런식으로 추가가능 하지만 var를 썼을때만
+List<int>를 썼을땐 불가능,
+number.last; 가끔 마지막 요소를 가져와야하는데 요소가 몇개있는지 모를때 씀,
+tip)만약 vscode나 dartPad를 사용한다면 맨 끝을 쉽표로 마무리하면 유용하다
+예를들어 var numbers = [1,2,3,]; 이런식으로,
+collection if를 사용하면 존재할수도 안할수도 있는 요소를 가져올수있다.
