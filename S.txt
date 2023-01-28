@@ -18,3 +18,8 @@ late = 초기 데이터 없이 먼저 변수를 생성하고 추후에 데이터
 flutter로 data fecthing을 할 때 유용하고
 late 변수를 만들고 API에 요청을 보낸 뒤에 API에서 값을 보내주면 그 응답값을 late변수에 넣어 사용할 수 있다.
 느낌상 이변수는 null이면 안되고 나중에라도 값이 할당되어야해 하고 명시하는느낌
+
+const = dart의 const는 자바스크립트나 타입스크립트와 다름
+자바스크립트나 타입스크립트의 const는 다트의 final과 비슷
+dart 의 const는 compile-time constant를 만들어주고 이뜻은 컴파일할때 알고있는 값에 사용해야한단 뜻
+만약 어떤 값인지 모르고 그 값이 API로부터 오거나 사용자가 화면에서 입력해야 하는 값이라면 그건 const가 아닌 final이나 var가 되어야 한다.
