@@ -1,21 +1,13 @@
-typedef ListOfInts = List;
-
-ListOfInts reverseListOfNumbers(ListOfInts list) {
-  var reversedList = list.reversed.toList();
-  return reversedList;
+class Player {
+  final String name = 'leecj';
+  final int age = 37;
+  void sayName() {
+    print("Hi my name is $name");
+  }
 }
 
 void main() {
-  print(reverseListOfNumbers([1, 2, 3]));
-  // 결과 : [3,2,1]
+// new를 꼭 붙이지 않아도 된다.
+  var player = Player();
+  player.sayName();
 }
-
-// typedef UserInfo = Map<String, String>;
-
-// String sayHi(UserInfo userinfo) {
-//   return "Hi ${userinfo['name']}";
-// }
-
-// void main() {
-//   sayHi({"asdfasdf": "leecj"});
-// }
