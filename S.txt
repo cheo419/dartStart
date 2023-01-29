@@ -54,3 +54,8 @@ collection for = 전에 collection If와 같이 배열안에 For문을 넣을 �
 Maps = 자바스크립트나 타입스크립트의 object, 파이썬의 dictionary 같은거임
 key와 value로 이루어졌는데 key는 String, value는 object로 이루어졌다.
 key와 value를 가지는 구조로 object를 만들때 그리고 그것들이 특정 형태를 가질때 players,movies,photos 같이 API로 얻은 데이터는 class를 추천
+
+Sets = Set에 속한 모든 아이템들이 유니크해야될 때 사용한다.
+유니크할 필요가 없다면 List를 사용하면 된다,
+Dart에서 List는 Python의 List와 같고
+Dart에서 Set은 Python의 Tuple과 같다.
