@@ -94,3 +94,9 @@ Named constructor parameters = 클래스가 거대해질 경우 사용하는것�
 Named Constructor parameters 깃허브 커밋 main.dart 참조.
 tip) 어떻게하면 named(명명된) argument를 가진 constructor로 바꿀수 있는지? 중괄호치기
 tip) dart는 null을 안좋아하기때문에 null도 될수있다고 표기를 하던지 required를 기본값으로 줘서 처리해줘야함
+
+Named constructor = constructor(생성자) 함수를 여러개 만들때 보통 사용
+콜론(:)을 사용하면 특별한 생성자 함수를 만들 수 있고
+콜론을 넣음으로써 dart에게 여기서 객체를 초기화하라고 명령할 수 있다.
+tip) 기본적으로 모든 positional parameter는 required다.
+named parameter에는 기본적으로 required 속성이 없어 required를 명시해줘야해 좀 더 명시적이다.
