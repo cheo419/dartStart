@@ -59,3 +59,8 @@ Sets = Set에 속한 모든 아이템들이 유니크해야될 때 사용한다.
 유니크할 필요가 없다면 List를 사용하면 된다,
 Dart에서 List는 Python의 List와 같고
 Dart에서 Set은 Python의 Tuple과 같다.
+
+#3
+Function = Dart는 진정한 객체 지향 언어이므로 함수도 객체이며 타입이 Function입니다. 이는 함수를 변수에 할당하거나 다른 함수에 인수로 전달할 수 있음을 의미합니다.
+ex) 하나의 표현식만 포함하는 함수의 경우 아래와 같이 단축 구문을 사용할 수 있습니다. (리턴을 지우고 중괄호를 없애고 =>(fat arrow syntax)를 쓴다.)
+String sayHello(String name) => "Hello ${name} nice to meet you.";

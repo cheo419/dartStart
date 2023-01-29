@@ -1,14 +1,10 @@
+// String sayhello(String apple) {
+//   return "Hello $apple nice to meet you!";
+// }
+String sayhello(String apple) => 'Hello $apple nice to meet you!';
+// same
+
 void main() {
-  // Set<int> numbers = {1, 2, 3, 4};
-  // numbers.add(1);
-  // numbers.add(1);
-  // numbers.add(1);
-  // print(numbers);
-  // 결과 : {1,2,3,4}
-  List<int> numbers = [1, 2, 3, 4];
-  numbers.add(1);
-  numbers.add(1);
-  numbers.add(1);
-  print(numbers);
-  // 결과 : [1,2,3,4,1,1,1]
+  print(sayhello('leecj'));
+  // 결과 : Hello leecj nice to meet you!
 }
