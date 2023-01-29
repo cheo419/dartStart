@@ -1,13 +1,17 @@
 class Player {
-  final String name = 'leecj';
-  final int age = 37;
+  final String name;
+  int age;
+
+  Player(this.name, this.age);
+
   void sayName() {
-    print("Hi my name is $name");
+    print("hi my name is $name");
   }
 }
 
 void main() {
-// new를 꼭 붙이지 않아도 된다.
-  var player = Player();
+  var player = Player("leecj", 29);
   player.sayName();
+  var player2 = Player("cacao", 8);
+  player2.sayName();
 }
