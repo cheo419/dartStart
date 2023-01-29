@@ -1,10 +1,8 @@
-// String sayhello(String apple) {
-//   return "Hello $apple nice to meet you!";
-// }
-String sayhello(String apple) => 'Hello $apple nice to meet you!';
-// same
+String sayHello(
+    {required String name, required int age, required String country}) {
+  return "${name} / ${age} / ${country}";
+}
 
 void main() {
-  print(sayhello('leecj'));
-  // 결과 : Hello leecj nice to meet you!
+  print(sayHello(name: "sugar", age: 10, country: "Korea"));
 }
