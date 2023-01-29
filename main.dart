@@ -1,8 +1,14 @@
 class Player {
   final String name;
   int age;
+  String team;
+  int killpoint;
 
-  Player(this.name, this.age);
+  Player(
+      {required this.name,
+      required this.age,
+      required this.team,
+      required this.killpoint});
 
   void sayName() {
     print("hi my name is $name");
@@ -10,8 +16,17 @@ class Player {
 }
 
 void main() {
-  var player = Player("leecj", 29);
-  player.sayName();
-  var player2 = Player("cacao", 8);
+  var player = Player(
+    name: "lee",
+    age: 29,
+    team: "red",
+    killpoint: 5,
+  );
+  var player2 = Player(
+    name: "gyu",
+    age: 62,
+    team: "green",
+    killpoint: 9,
+  );
   player2.sayName();
 }
