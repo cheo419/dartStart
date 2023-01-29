@@ -69,3 +69,6 @@ Named Parameters = dart의 function은 named parameter라는걸 지원함 flutte
 tip) dart는 null safety때문에 null을 허용하지않음 그래서 null을 허용할수있게 만들어줘야함, 또한
 명시적으로 required로 표시되지 않는 한 선택 사항이다 기본값을 제공하지 않거나 Named parameters를 필수로 표시하지 않으면 해당 유형은 기본값이 null이 되므로 null을 허용해야 합니다.
 tip)named argument 쓰는법은 인수에 중괄호를 치고 메인에 명시를 한다
+
+optional positional parameters = Dart에서 [] 은 optional, positional parameter를 명시할 때 사용된다.
+name, age는 필수값이고 []를 통해 country를 optional값으로 지정해줄 수 있다.
