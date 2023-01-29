@@ -1,23 +1,21 @@
-// String capitalizeName(String? name) {
-//   if (name != null) {
-//     return name.toUpperCase();
-//   }
-//   return 'ANON';
-// }
-// == same
+typedef ListOfInts = List;
 
-// String capitalizeName(String? name) =>
-//     name != null ? name.toUpperCase() : 'ANON';
-// == same
-
-String capitalizeName(String? name) {
-  return name?.toUpperCase() ?? "";
+ListOfInts reverseListOfNumbers(ListOfInts list) {
+  var reversedList = list.reversed.toList();
+  return reversedList;
 }
 
 void main() {
-  String? name;
-  name ??= "java";
-  name = null;
-  name ??= "javascript";
-  print(name); // js
+  print(reverseListOfNumbers([1, 2, 3]));
+  // 결과 : [3,2,1]
 }
+
+// typedef UserInfo = Map<String, String>;
+
+// String sayHi(UserInfo userinfo) {
+//   return "Hi ${userinfo['name']}";
+// }
+
+// void main() {
+//   sayHi({"asdfasdf": "leecj"});
+// }
