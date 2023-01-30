@@ -115,5 +115,6 @@ Flutter를 사용할때에는 그다지 많이 사용하진않지만 유용하�
 
 Inheritance = 코드참조. constructor,extends,super,@override 보기
 
-
+Mixins = Flutter에서 자주 사용. 사용 조건은 생성자가 없는 클래스여야 한다. 핵심은 여러클래스에 재사용이 가능하다는 점, 상속을 할때 extends를 하지않고 with를 사용한다.
+tip)extends와 차이점은 extend를 하게되면 확장한 그 클래스는 부모클래스가 되지만 with는 부모의 인스턴스 관계가 된다 따라서 단순하게 mixin 내부의 프로퍼티를 갖고오는거라고 생각하면 쉽다.
 
