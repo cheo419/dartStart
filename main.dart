@@ -1,28 +1,12 @@
 class Player {
   final String name;
-  int age, killpoint;
+  int age;
   String team;
 
-  Player(
-      {required this.name,
-      required this.age,
-      required this.team,
-      required this.killpoint});
-
-  // Player를 초기화 하는 method
-  Player.createBlackPlayer({
-    required String name,
-    required int killpoint,
-  })  : this.killpoint = killpoint,
-        this.name = name,
-        this.team = 'black',
-        this.age = 0;
-
-  Player.createWhitePlayer(String name, int killpoint)
-      : this.killpoint = killpoint,
-        this.name = name,
-        this.team = 'white',
-        this.age = 0;
+  Player.fromJson(Map<String, dynamic> playerJson)
+      : name = playerJson['name'],
+        age = playerJson['age'],
+        team = playerJson['team'];
 
   void sayName() {
     print("hi my name is $name");
@@ -30,14 +14,28 @@ class Player {
 }
 
 void main() {
-  // named 형식
-  var player = Player.createBlackPlayer(
-    name: "leecj",
-    killpoint: 14,
-  );
-  // positional 형식
-  var player2 = Player.createWhitePlayer(
-    "leegyu",
-    21,
-  );
+  var apiData = [
+    {
+      "name": "leecj",
+      "team": "black",
+      "age": 0,
+    },
+    {
+      "name": "leegyu",
+      "team": "black",
+      "age": 0,
+    },
+    {
+      "name": "hahyun",
+      "team": "black",
+      "age": 0,
+    }
+  ];
+  apiData.forEach((playerJson) {
+    var player = Player.fromJson(playerJson);
+    player.sayName();
+    // 결과 :  hi my name is leecj
+    //         hi my name is leegyu
+    //         hi my name is hahyun
+  });
 }

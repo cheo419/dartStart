@@ -100,3 +100,6 @@ Named constructor = constructor(생성자) 함수를 여러개 만들때 보통 
 콜론을 넣음으로써 dart에게 여기서 객체를 초기화하라고 명령할 수 있다.
 tip) 기본적으로 모든 positional parameter는 required다.
 named parameter에는 기본적으로 required 속성이 없어 required를 명시해줘야해 좀 더 명시적이다.
+
+constructor 복습 = API로부터 여러 Player가 들어있는 목록을 받는다고 가정했을때
+깃허브 커밋 constructor 복습 을 보자..!
