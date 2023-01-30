@@ -106,3 +106,5 @@ constructor 복습 = API로부터 여러 Player가 들어있는 목록을 받는
 
 Cascade notation = 반복되는 부분이 있는 코드를 .. 으로 대체할수있다. 매우 유용한 operator, 앞에 변수나 class를 가져온다.
 
+Enum = flutter에서 많이 사용하며 바보같은 실수들을 안만들게끔 도와줌
+tip) Flutter에서는 Color: 'red' 이렇게 사용하지 않고 Color.red 이런식으로 사용함
