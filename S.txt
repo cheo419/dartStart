@@ -103,3 +103,6 @@ named parameter에는 기본적으로 required 속성이 없어 required를 명�
 
 constructor 복습 = API로부터 여러 Player가 들어있는 목록을 받는다고 가정했을때
 깃허브 커밋 constructor 복습 을 보자..!
+
+Cascade notation = 반복되는 부분이 있는 코드를 .. 으로 대체할수있다. 매우 유용한 operator, 앞에 변수나 class를 가져온다.
+
